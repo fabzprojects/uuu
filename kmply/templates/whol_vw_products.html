@@ -1,0 +1,38 @@
+
+ {%extends 'wholesaler_layout.html'%}
+ {%block content%}
+    <section class="services py-5">
+      
+        <div class="container py-md-5" >
+        
+            <div class="row ab-info">
+                {%for i in obj%}
+                <!-- <div class="col-lg-6 ab-content text-left pr-lg-5">
+                    <h3 class="title-w3pvt">What Your Looking for?</h3>
+                    <h5>Nulla uter sollicitudin velit</h5>
+                    <p><strong class="text-capitalize"> Pellentesque libero justo, semper at tempus vel, ultrices in sed ligula. Nulla uter sollicitudin velit.</strong>Lorem Ipsum has been the industry's standard since the 1500s. Praesent ullamcorper dui turpis.Nulla pellentesque mi non laoreet eleifend. Integer porttitor mollisar lorem, at molestie arcu pulvinar ut. </p>
+                </div> -->
+              
+                <div class="col-lg-3 ab-content" >
+                    <div class="ab-content-inner"  ><br>
+                        <a href="/whol_vw_det/{{i.id}}"><img style=" width:150px; height:150px;"src="../static/pics/{{i.image}}" alt="news image" class="img-fluid"></a>
+                        <div class="ab-info-con"><br>
+                            <h6> {{i.name}}</h><br><br>
+                            <!-- <h6> {{i.brand}}</h6><br> -->
+                            <h6> {{i.wprice}}/-</h6><br>
+                            <!-- <h6> {{i.desc}}</h6><br> -->
+                           
+                            <a href="/whol_vw_det/{{i.id}}" class="btn btn-small btn-primary"> View Details
+                                <i class="btn-icon-only icon-ok"></i>										
+                            </a>
+                   
+                            <!-- <a href="" class="read-more two btn m-0 px-3"><span class=""> Book Now</span></a> -->
+                        </div>
+                    </div>
+                </div>
+                {%endfor%}
+               
+            </div>
+        </div>
+    </section>
+    {%endblock%}

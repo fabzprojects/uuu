@@ -1,0 +1,190 @@
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<br><br>
+<!-- 
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script> -->
+<!------ Include the above in your HEAD tag ---------->
+<a href="/retailor_index/{{current_user.id}}"><h5>Back To Home</h5></a>
+<section id="login">
+    <div class="container">
+    	<div class="row">
+    	    <div class="col-xs-12">
+        	    <div class="form-wrap" style="
+                width: 685px; height:685px; margin-left:250px;
+            ">
+               <h1>Place Stitching Order</h1>
+                    <form role="form" action="" method="post" id="login-form"  enctype = "multipart/form-data" autocomplete="off">
+                       
+                        <div class="form-group">
+                            <label >Product</label>
+                         
+                            <input type="text"  name="product" value={{d.product}} id="email" class="form-control" placeholder="Product" > 
+                                               </div><br>
+                                               <div class="form-group">
+                                                <label >Quantity</label>
+                             
+                                                <input type="text"  name="qty" value={{d.qty}} placeholder="Quantity" id="email" class="form-control" > 
+                                                                   </div> <br> 
+
+                                               <div class="form-group">
+                                                <label >Upload Model Image</label>
+                                                
+                                                <input type="file"  name="image" id="email" class="form-control" placeholder="Image" > 
+                                             <br>
+                                             <div class="form-group">
+                                                <label >Height</label>
+                                                
+                                                <input type="text"  name="height" id="email" class="form-control" placeholder="Height" > 
+                                             <br>
+                                             <div class="form-group">
+                                                <label >Bust</label>
+                                                
+                                                <input type="text"  name="bust" id="email" class="form-control" placeholder="Bust" > 
+                                             <br>
+                                             <div class="form-group">
+                                                <label >Waist</label>
+                                                
+                                                <input type="text"  name="waist" id="email" class="form-control" placeholder="Waist" > 
+                                             <br>
+                                             <div class="form-group">
+                                                <label >Hips</label>
+                                                
+                                                <input type="text"  name="hips" id="email" class="form-control" placeholder="Hips" > 
+                                             <br>
+                                             <div class="form-group">
+                                                <label >Sleeve</label>
+                                                
+                                                <input type="text"  name="sleeve" id="email" class="form-control" placeholder="Sleeve" > 
+                                             <br>
+                                             <div class="form-group">
+                                                <label >Neck</label>
+                                                
+                                                <input type="text"  name="neck" id="email" class="form-control" placeholder="Neck" > 
+                                             <br>
+                                                                  <div class="form-group">
+                                                                    <label >Description</label>
+                                                 
+                                                                    <textarea rows="8"  name="desc" placeholder="Description" id="email" class="form-control" > </textarea>
+                                                                                       </div>   
+                                                                                  
+        
+                        <input type="submit" id="btn-login" class="btn btn-custom btn-lg btn-block" value="Add">
+                    </form>
+                    
+                    <hr>
+        	    </div>
+    		</div> <!-- /.col-xs-12 -->
+    	</div> <!-- /.row -->
+    </div> <!-- /.container -->
+</section>
+
+
+
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                
+                
+            </div>
+        </div>
+    </div>
+</footer>
+<style>
+    /*    --------------------------------------------------
+	:: Login Section
+	-------------------------------------------------- */
+#login {
+    padding-top: 50px
+}
+#login .form-wrap {
+    width: 30%;
+    margin: 0 auto;
+}
+#login h1 {
+    color:crimson;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+#login .form-group {
+    margin-bottom: 25px;
+}
+#login .checkbox {
+    margin-bottom: 20px;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+#login .checkbox.show:before {
+    content: '\e013';
+    color: #1fa67b;
+    font-size: 17px;
+    margin: 1px 0 0 3px;
+    position: absolute;
+    pointer-events: none;
+    font-family: 'Glyphicons Halflings';
+}
+#login .checkbox .character-checkbox {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    vertical-align: middle;
+    display: inline-block;
+}
+#login .checkbox .label {
+    color: #6d6d6d;
+    font-size: 13px;
+    font-weight: normal;
+}
+#login .btn.btn-custom {
+    font-size: 14px;
+	margin-bottom: 20px;
+}
+#login .forget {
+    font-size: 13px;
+	text-align: center;
+	display: block;
+}
+
+/*    --------------------------------------------------
+	:: Inputs & Buttons
+	-------------------------------------------------- */
+.form-control {
+    color: #212121;
+}
+.btn-custom {
+    color: #fff;
+	background-color: crimson;
+}
+.btn-custom:hover,
+.btn-custom:focus {
+    color: #fff;
+}
+
+/*    --------------------------------------------------
+    :: Footer
+	-------------------------------------------------- */
+#footer {
+    color: #6d6d6d;
+    font-size: 12px;
+    text-align: center;
+}
+#footer p {
+    margin-bottom: 0;
+}
+#footer a {
+    color: inherit;
+}
+</style>
+<br><br>
+

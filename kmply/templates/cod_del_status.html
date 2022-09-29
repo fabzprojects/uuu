@@ -1,0 +1,136 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+-->
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Kuthampully Handlooms</title>
+
+  <!-- Template CSS -->
+  <link rel="stylesheet" href="../static/css/style-starter.css">
+  <!-- web fonts -->
+  <link href="//fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+  <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
+  <!-- /web fonts -->
+</head>
+
+<body>
+  <!-- header -->
+  <header class="w3l-header">
+    <div class="hero-header-11">
+      <div class="hero-header-11-content">
+        <div class="container">
+          <nav class="navbar navbar-expand-xl navbar-light py-sm-2 py-1 px-0">
+            <a class="navbar-brand editContent" href="/delivery_index/{{current_user.id}}">Kuthampully Handlooms</a>
+            <!-- if logo is image enable this   
+				<a class="navbar-brand" href="#/">
+						<img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
+				</a> -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon fa fa-bars"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="/delivery_index/{{current_user.id}}">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/de_vw_ords/{{current_user.id}}">Delivery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/logout">Logout</a>
+                  </li>
+                <!-- <li class="nav-item">
+                  <a class="nav-link" href="#about">About</a>
+                </li>
+               
+                <li class="nav-item">
+                  <a class="nav-link" href="#gallery">Gallery</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    Register
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="/customer">Customer</a>
+                    <a class="dropdown-item" href="/tailor">Tailor</a>
+                   
+                     <a class="dropdown-item" href="/wholesaler">Wholesaler</a>
+                    <a class="dropdown-item" href="/retailer">Retailer</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+                </li> -->
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+<br><br><br><br>
+<!-- <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script> -->
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-md-4 " style="
+        left: 439px;">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        Delivery Status
+                    </h3>
+                   
+                </div><br><br><br>
+                <div class="panel-body">
+                    <form role="form" method="POST"  enctype="multipart/form-data">
+
+
+                    <div class="form-group">
+                       
+                        <div class="input-group">
+                            <input type="radio" class="form-control" value="Delivered" name="status"
+                                required autofocus />Delivered<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <input type="radio" class="form-control" value="Not Delivered" name="status"
+                                required autofocus />Not Delivered<br><br>
+                            <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+                        </div>
+                        <div class="input-group">
+                            <input type="radio" class="form-control" value="Amount Received" name="amt"
+                                required autofocus />Amount Received<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <input type="radio" class="form-control" value="Amount Not Received " name="amt"
+                                required autofocus />Amount Not Received <br><br>
+                            <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+                        </div>
+                    </div>
+       
+            <ul class="nav nav-pills nav-stacked">
+                
+                <!-- <li class="active"><a href="#"><span class="badge pull-right"><span class="glyphicon glyphicon-usd"></span>Rs 500/-</span> Final Payment</a> -->
+                </li>
+            </ul>
+            <br/>
+            <input type="submit" class="btn btn-success btn-lg btn-block" role="button" value="Continue">
+        </div>
+    </div>
+</div>
+</form>
+<style>
+    body { margin-top:20px; }
+.panel-title {display: inline;font-weight: bold;}
+.checkbox.pull-right { margin: 0; }
+.pl-ziro { padding-left: 0px; }
+</style>

@@ -1,0 +1,41 @@
+
+
+ {%extends 'retailor_layout.html'%}
+ {%block content%}
+    <section class="services py-5">
+      
+        <div class="container py-md-5" >
+        
+            <div class="row ab-info">
+                {%for i in d%}
+                <!-- <div class="col-lg-6 ab-content text-left pr-lg-5">
+                    <h3 class="title-w3pvt">What Your Looking for?</h3>
+                    <h5>Nulla uter sollicitudin velit</h5>
+                    <p><strong class="text-capitalize"> Pellentesque libero justo, semper at tempus vel, ultrices in sed ligula. Nulla uter sollicitudin velit.</strong>Lorem Ipsum has been the industry's standard since the 1500s. Praesent ullamcorper dui turpis.Nulla pellentesque mi non laoreet eleifend. Integer porttitor mollisar lorem, at molestie arcu pulvinar ut. </p>
+                </div> -->
+              
+                <div class="col-lg-3 ab-content" >
+                    <div class="ab-content-inner"  ><br>
+                        <a href=""><img style=" width:250px; height:250px;"src="../static/pics/{{i.image}}" alt="news image" class="img-fluid"></a>
+                  <div class="ab-info-con"><br>
+                           &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<h6 style="margin-left:60px;"> {{i.product}}</h><br><br>
+                         
+                            &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <h6 style="margin-left:60px;">Quantity : {{i.qty}} </h6><br>
+                           
+                           {%if i.st=="Place Stitching Order"%}
+                            &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a href="/st_tai/{{i.id}}/{{m.id}}" class="btn btn-primary"><span class="">{{i.st}}</span></a>
+                            {%else%}
+                            &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <button class="btn btn-danger"><span class="">{{i.st}}</span></button>
+                            {%endif%}
+
+
+                           
+                        </div>
+                    </div>
+                </div>
+                {%endfor%}
+               
+            </div>
+        </div>
+    </section>
+    {%endblock%}
